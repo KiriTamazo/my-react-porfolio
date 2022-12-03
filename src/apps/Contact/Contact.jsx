@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container md:h-full grid items-center">
+    <div className="container md:h-full grid items-center mb-4">
       <section id="contact" className="pt-24 pb-16">
         {/* Heading */}
         <motion.div
@@ -37,7 +37,7 @@ const Contact = () => {
               <span className="text-yellow">Contact Me</span> To Get Started
             </p>
             <div className="flex md:justify-end my-5">
-              <LineGradient width="mx-auto w-2/4 max-w-[650px]" />
+              <LineGradient width="mx-auto w-2/4 max-w-[580px]" />
             </div>
           </div>
         </motion.div>

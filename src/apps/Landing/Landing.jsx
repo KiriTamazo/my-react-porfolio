@@ -4,6 +4,8 @@ import profile from "../../../public/image/profile1.png";
 import { motion } from "framer-motion";
 import SocialMediaIcons from "../../components/SocialMediaIcons";
 import { Link } from "react-scroll";
+import CV from "../../../public/CV.pdf";
+import { FaDownload } from "react-icons/fa";
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreen = useMediaQuery("(min-width:1050px)");
   return (
@@ -13,21 +15,6 @@ const Landing = ({ setSelectedPage }) => {
     >
       {/* Image Section */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16  md:mt-8">
-        {/* {isAboveMediumScreen ? (
-          <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before-border-blue before:z-[-1]">
-            <img
-              src={profile}
-              alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] bg-gradient-rainblue rounded-t-[400px] "
-            />
-          </div>
-        ) : (
-          <img
-            src={profile}
-            alt="profile"
-            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] bg-gradient-rainblue rounded-t-[400px] "
-          />
-        )} */}
         <img
           src={profile}
           className="max-w-[350px]  md:max-w-[550px] max-h-[550px]"
@@ -77,23 +64,20 @@ const Landing = ({ setSelectedPage }) => {
           <Link
             smooth={true}
             duration={500}
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:scale-110 hover:text-white transition duration-500"
-            // onClick={() => setSelectedPage("contact")}
+            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3   px-7  font-semibold hover:scale-110 hover:text-white transition duration-500 cursor-pointer"
             to="contact"
           >
             Contact Me
           </Link>
-          <Link
-            smooth={true}
-            duration={500}
+          <a
+            href={CV}
+            target="_blank"
             className="rounded-sm bg-gradient-rainblue py-0.5 px-0.5 hover:scale-110 transition duration-500"
-            // onClick={() => setSelectedPage("contact")}
-            to="contact"
           >
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex rounded-sm items-center justify-center font-playfair px-10">
-              Download CV
+              <FaDownload className="mr-2" /> CV
             </div>
-          </Link>
+          </a>
         </motion.div>
         <motion.div
           className="flex mt-5 gap-8 justify-center md:justify-start"
