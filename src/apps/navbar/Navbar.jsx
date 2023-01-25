@@ -32,7 +32,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           )}
         </nav>
       </header>
-      {!isAboveSmallScreens && isMenuToggle && (
+      {!isAboveSmallScreens && (
         <Sidebar
           setIsMenuToggle={setIsMenuToggle}
           isMenuToggle={isMenuToggle}

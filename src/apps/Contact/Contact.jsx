@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container md:h-full grid items-center mb-4">
+    <div className="container  md:h-auto grid items-center mb-4">
       <section id="contact" className="pt-24 pb-16">
         {/* Heading */}
         <motion.div

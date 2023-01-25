@@ -11,8 +11,8 @@ const Sidebar = ({
 }) => {
   return (
     <aside
-      className={`fixed right-0 top-0 h-full ${
-        isMenuToggle === true ? "w-[300px]" : "w-[0]"
+      className={`fixed right-0 top-0 h-full w-[300px] ${
+        isMenuToggle === true ? "translate-x-[0]" : "translate-x-[100%]"
       } bg-[#100f38] transition-all duration-500 filter-none z-[1111]`}
     >
       <div className="flex justify-end p-12">

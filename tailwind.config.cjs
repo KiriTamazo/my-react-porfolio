@@ -34,6 +34,7 @@ module.exports = {
       xs: "480px",
       sm: "768px",
       md: "1050px",
+      lg: "1300px",
     },
   },
   plugins: [],

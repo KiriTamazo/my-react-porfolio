@@ -24,7 +24,7 @@ const MySkills = () => {
             <p className="font-playfair font-semibold text-4xl mb-5">
               My <span className="text-red">Skills</span>
             </p>
-            <LineGradient width="w-1/3" />
+            <LineGradient width="w-[10rem]" />
             <p className="mt-10 mb-7">
               I want to be a Junior React Front-end Developer and seeking an
               opportunity to extend my web developing and web designing skills &
@@ -42,7 +42,7 @@ const MySkills = () => {
                 <img
                   src={profile}
                   alt="skills"
-                  className="z-10 bg-[#00b5ee] md:max-w-[550px] sm:max-w-[450px] rounded-md"
+                  className="z-10 bg-[#00b5ee] lg:max-w-[550px] sm:max-w-[450px] rounded-md"
                 />
               </div>
             ) : (
@@ -55,10 +55,13 @@ const MySkills = () => {
           </div>
         </div>
         {/* Skills */}
-        <div className="md:flex md:justify-between mt-16 gap-32">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:justify-between mt-16 
+        gap-16 md:gap-32"
+        >
           {/* Experiences */}
           <motion.div
-            className="md:w-1/3 mt-10"
+            className=" mt-10"
             initial="hidden"
             whileInView="visible"
             viewport={{ onece: true, amount: 0.5 }}
@@ -92,7 +95,7 @@ const MySkills = () => {
           </motion.div>
           {/* Innovative */}
           <motion.div
-            className="md:w-1/3 mt-10"
+            className=" mt-10"
             initial="hidden"
             whileInView="visible"
             viewport={{ onece: true, amount: 0.5 }}
@@ -119,7 +122,7 @@ const MySkills = () => {
           </motion.div>
           {/* Imaginative */}
           <motion.div
-            className="md:w-1/3 mt-10"
+            className=" mt-10"
             initial="hidden"
             whileInView="visible"
             viewport={{ onece: true, amount: 0.5 }}

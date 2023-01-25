@@ -46,14 +46,14 @@ const Projects = () => {
           variants={container}
         >
           {/* Row 1 */}
-          <div className="bg-red p-10 md:max-w-[100%] max-w-[400px] max-h-[400px] md:max-h-fit text-2xl font-playfair font-semibold flex justify-center items-center text-center">
+          <div className="bg-red p-10   max-h-[400px] md:max-h-fit text-2xl font-playfair font-semibold flex justify-center items-center text-center">
             Beautiful User Interface
           </div>
           {projects.map((project, i) => (
             <Project key={i} project={project} />
           ))}
 
-          <div className="md:max-h-fit md:min-h-[350px] bg-blue p-10 md:max-w-[100%] max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold flex justify-center items-center text-center">
+          <div className=" bg-blue p-10   max-h-[400px] md:max-h-fit text-2xl font-playfair font-semibold flex justify-center items-center text-center">
             Smooth User Experience
           </div>
         </motion.div>
